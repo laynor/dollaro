@@ -35,7 +35,10 @@
 ;; `$:fill-template-from-file', that operate respectively on strings
 ;; and on files. The template variable values are passed as alists.
 ;;
-;; Examples:
+;; To use these functions, just
+;;  (require 'dollaro)
+;;
+;; Example Usage:
 ;; ($:fill-template "First Name: $[first-name], Last Name: $[last-name]"
 ;;                  '((first-name . "Giovanni") (last-name . "Cane")))
 ;;
