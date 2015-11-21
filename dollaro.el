@@ -49,6 +49,7 @@
 
 ;; Got this one from emacs wiki
 (eval-when-compile (require 'cl))
+(require 's)
 
 (defun $::map-regex (buffer regex fn)
   "Map the REGEX over the BUFFER executing FN.
