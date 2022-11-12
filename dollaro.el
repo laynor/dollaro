@@ -1,4 +1,4 @@
-;;; dollaro.el --- simple text templates
+;;; dollaro.el --- simple text templates  -*- lexical-binding:t -*-
 
 ;; Copyright (C) 2013  Alessandro Piras
 
@@ -137,10 +137,6 @@ not nil."
     (insert-file-contents-literally template-file)
     ($:apply-template-in-current-buffer var-alist ignore-errors)
     (write-file destination-file)))
-
-;; Local Variables:
-;; lexical-binding: t
-;; End:
 
 (provide 'dollaro)
 ;;; dollaro.el ends here
